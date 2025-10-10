@@ -1,0 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/10 15:25:30 by eala-lah          #+#    #+#             */
+/*   Updated: 2025/10/10 15:26:35 by eala-lah         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
+
+# include <iostream>
+# include <string>
+
+class	Zombie
+{
+	private:
+		std::string	_name;
+
+	public:
+		Zombie(std::string name);
+		~Zombie(void);
+
+		void	announce(void);
+};
+
+#endif
