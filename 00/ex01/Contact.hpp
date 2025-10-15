@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 12:50:57 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/10 14:35:35 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/13 11:55:51 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define CONTACT_HPP
 
 # include <string>
-# include <iostream>
 
 class	Contact
 {

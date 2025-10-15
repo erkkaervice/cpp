@@ -6,7 +6,7 @@
 #    By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/10 12:24:02 by eala-lah          #+#    #+#              #
-#    Updated: 2025/10/10 14:42:18 by eala-lah         ###   ########.fr        #
+#    Updated: 2025/10/13 11:49:20 by eala-lah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME		= megaphone
 SRCS		= megaphone.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
-CXX			= c++
+CXX		= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)

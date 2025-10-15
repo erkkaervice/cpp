@@ -6,13 +6,13 @@
 #    By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/10 12:52:08 by eala-lah          #+#    #+#              #
-#    Updated: 2025/10/10 14:35:35 by eala-lah         ###   ########.fr        #
+#    Updated: 2025/10/13 11:54:29 by eala-lah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= phonebook
 
-SRCS		= main.cpp PhoneBook.cpp Contact.cpp
+SRCS		= main.cpp Contact.cpp PhoneBook.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
 CXX		= c++

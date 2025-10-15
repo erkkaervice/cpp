@@ -6,14 +6,14 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 13:49:09 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/10 14:50:25 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/13 12:48:29 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Account.hpp"
 #include <iostream>
 #include <iomanip>
 #include <ctime>
+#include "Account.hpp"
 
 int	Account::_nbAccounts = 0;
 int	Account::_totalAmount = 0;

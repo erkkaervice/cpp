@@ -6,10 +6,11 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 17:14:04 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/10 17:44:23 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/13 14:31:33 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
 #include "Harl.hpp"
 
 Harl::Harl(void) {}

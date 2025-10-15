@@ -6,10 +6,11 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 16:52:07 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/10 16:52:52 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/13 14:18:36 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
 #include "HumanB.hpp"
 
 HumanB::HumanB(std::string name) : _name(name), _weapon(NULL) {}

@@ -6,14 +6,13 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 16:49:45 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/10 16:54:24 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/13 14:14:32 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WEAPON_HPP
 # define WEAPON_HPP
 
-# include <iostream>
 # include <string>
 
 class	Weapon
