@@ -6,11 +6,11 @@
 #    By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 15:28:58 by eala-lah          #+#    #+#              #
-#    Updated: 2025/10/14 16:09:38 by eala-lah         ###   ########.fr        #
+#    Updated: 2025/10/20 14:16:46 by eala-lah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= TAMUFPNC
+NAME            = FixedTest
 
 SRCS		= main.cpp Fixed.cpp
 OBJS		= $(SRCS:.cpp=.o)

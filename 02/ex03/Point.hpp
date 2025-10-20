@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:06:07 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/14 16:22:29 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/20 16:02:40 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include "Fixed.hpp"
 
-class Point
+class	Point
 {
 	private:
 		Fixed const	_x;
@@ -23,7 +23,7 @@ class Point
 
 	public:
 		Point(void);
-		Point(float const x, float const y);
+		Point(float x, float y);
 		Point(Point const& other);
 		~Point(void);
 

@@ -6,12 +6,12 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 15:29:23 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/13 15:35:44 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/20 16:02:02 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "Fixed.hpp"
+#include <iostream>
 
 int	main(void)
 {

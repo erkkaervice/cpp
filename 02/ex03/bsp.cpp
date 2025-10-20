@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:06:17 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/14 16:26:07 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/20 16:03:18 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ bool	bsp(Point const a, Point const b, Point const c, Point const point)
 	float	d3 = sign(px, py, cx, cy, ax, ay);
 
 	if (d1 == 0.0f || d2 == 0.0f || d3 == 0.0f)
-		return (false);
+		return false;
 
 	bool	hasNeg = (d1 < 0.0f) || (d2 < 0.0f) || (d3 < 0.0f);
 	bool	hasPos = (d1 > 0.0f) || (d2 > 0.0f) || (d3 > 0.0f);

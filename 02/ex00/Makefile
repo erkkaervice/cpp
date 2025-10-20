@@ -6,11 +6,11 @@
 #    By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 12:10:00 by eala-lah          #+#    #+#              #
-#    Updated: 2025/10/13 15:07:59 by eala-lah         ###   ########.fr        #
+#    Updated: 2025/10/20 13:47:18 by eala-lah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= MFCIOCF
+NAME		= FixedPoint
 
 SRCS		= main.cpp Fixed.cpp
 OBJS		= $(SRCS:.cpp=.o)

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 16:05:42 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/14 16:27:42 by eala-lah         ###   ########.fr       */
+/*   Created: 2025/10/13 15:58:40 by eala-lah          #+#    #+#             */
+/*   Updated: 2025/10/20 16:07:50 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <iostream>
 # include <cmath>
 
-class Fixed
+class	Fixed
 {
 	private:
 		int			_value;
@@ -32,7 +32,7 @@ class Fixed
 		Fixed&	operator=(const Fixed& other);
 
 		int	getRawBits(void) const;
-		void	setRawBits(int const raw);
+		void	setRawBits(int raw);
 
 		float	toFloat(void) const;
 		int	toInt(void) const;

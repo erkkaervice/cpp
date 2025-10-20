@@ -6,11 +6,11 @@
 #    By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 15:58:19 by eala-lah          #+#    #+#              #
-#    Updated: 2025/10/14 16:10:08 by eala-lah         ###   ########.fr        #
+#    Updated: 2025/10/20 14:59:57 by eala-lah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= NWT
+NAME		= FixedTest
 
 SRCS		= main.cpp Fixed.cpp
 OBJS		= $(SRCS:.cpp=.o)
