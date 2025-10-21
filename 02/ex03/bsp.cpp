@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:06:17 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/20 16:03:18 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:08:51 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static float	sign(float x1, float y1, float x2, float y2, float x3, float y3)
 	return ((x1 - x3) * (y2 - y3) - (x2 - x3) * (y1 - y3));
 }
 
-bool	bsp(Point const a, Point const b, Point const c, Point const point)
+bool	bsp(const Point a, const Point b, const Point c, const Point point)
 {
 	float	ax = a.getX().toFloat();
 	float	ay = a.getY().toFloat();

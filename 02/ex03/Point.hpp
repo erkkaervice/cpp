@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:06:07 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/20 16:02:40 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:07:55 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@ class	Point
 	public:
 		Point(void);
 		Point(float x, float y);
-		Point(Point const& other);
+		Point(const Point& other);
 		~Point(void);
 
-		Point&	operator=(Point const& other);
+		Point&	operator=(const Point& other);
 
-		Fixed const&	getX(void) const;
-		Fixed const&	getY(void) const;
+		const Fixed&	getX(void) const;
+		const Fixed&	getY(void) const;
 };
 
 #endif

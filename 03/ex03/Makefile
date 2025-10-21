@@ -6,7 +6,7 @@
 #    By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/15 13:24:53 by eala-lah          #+#    #+#              #
-#    Updated: 2025/10/15 16:30:57 by eala-lah         ###   ########.fr        #
+#    Updated: 2025/10/21 14:14:55 by eala-lah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRCS		= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
 CXX		= c++
-CXXFLAGS	= -Wall -Wextra -Werror -std-c++98
+CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 

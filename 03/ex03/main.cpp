@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:24:44 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/15 16:24:26 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:15:16 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	main(void)
 	std::cout << std::endl;
 
 	std::cout << "--- Checking Stats ---" << std::endl;
-	std::cout << "Name: " << diamond.getName() << std::endl;
 	std::cout << "HP: " << diamond.getHitPoints() << std::endl;
 	std::cout << "EP: " << diamond.getEnergyPoints() << std::endl;
 	std::cout << "AD: " << diamond.getAttackDamage() << std::endl;
