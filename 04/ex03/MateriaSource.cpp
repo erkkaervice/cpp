@@ -6,68 +6,85 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:41:53 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/15 13:41:58 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:43:52 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "MateriaSource.hpp"
 #include <iostream>
 
-MateriaSource::MateriaSource()
+MateriaSource::MateriaSource(void) : _count(0)
 {
-	for (int i = 0; i < 4; i++)
-		materias[i] = nullptr;
-	std::cout << "MateriaSource constructor called" << std::endl;
+	std::cout << "MateriaSource: Default constructor called" << std::endl;
+	for (int i = 0; i < MAX_MATERIAS; i++)
+		_learned[i] = 0;
 }
 
-MateriaSource::MateriaSource(const MateriaSource &other)
+MateriaSource::MateriaSource(const MateriaSource& other)
 {
-	for (int i = 0; i < 4; i++)
-		materias[i] = other.materias[i] ? other.materias[i]->clone() : nullptr;
-	std::cout << "MateriaSource copy constructor called" << std::endl;
+	std::cout << "MateriaSource: Copy constructor called" << std::endl;
+	_count = 0;
+	for (int i = 0; i < MAX_MATERIAS; i++)
+		_learned[i] = 0;
+	*this = other;
 }
 
-MateriaSource &MateriaSource::operator=(const MateriaSource &other)
+MateriaSource& MateriaSource::operator=(const MateriaSource& other)
 {
+	std::cout << "MateriaSource: Copy assignment operator called" << std::endl;
 	if (this != &other)
 	{
-		for (int i = 0; i < 4; i++)
+		for (int i = 0; i < _count; i++)
+			delete _learned[i];
+		_count = 0;
+		for (int i = 0; i < other._count; i++)
 		{
-			delete materias[i];
-			materias[i] = other.materias[i] ? other.materias[i]->clone() : nullptr;
+			if (other._learned[i])
+				learnMateria(other._learned[i]->clone());
 		}
+		for (int i = _count; i < MAX_MATERIAS; i++)
+			_learned[i] = 0;
 	}
-	std::cout << "MateriaSource copy assignment called" << std::endl;
 	return *this;
 }
 
+
 MateriaSource::~MateriaSource()
 {
-	for (int i = 0; i < 4; i++)
-		delete materias[i];
-	std::cout << "MateriaSource destructor called" << std::endl;
+	std::cout << "MateriaSource: Destructor called" << std::endl;
+	for (int i = 0; i < _count; i++)
+		delete _learned[i];
 }
 
-void MateriaSource::learnMateria(AMateria* m)
+void	MateriaSource::learnMateria(AMateria* m)
 {
 	if (!m)
-		return;
-	for (int i = 0; i < 4; i++)
 	{
-		if (!materias[i])
-		{
-			materias[i] = m->clone();
-			return;
-		}
+		std::cout << "MateriaSource cannot learn null Materia." << std::endl;
+		return;
+	}
+	if (_count < MAX_MATERIAS)
+	{
+		_learned[_count++] = m;
+		std::cout << "MateriaSource learned " << m->getType() << std::endl;
+	}
+	else
+	{
+		std::cout << "MateriaSource cannot learn more Materias." << std::endl;
+		delete m;
 	}
 }
 
-AMateria* MateriaSource::createMateria(std::string const & type)
+AMateria*	MateriaSource::createMateria(std::string const& type)
 {
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < _count; i++)
 	{
-		if (materias[i] && materias[i]->getType() == type)
-			return materias[i]->clone();
+		if (_learned[i] && _learned[i]->getType() == type)
+		{
+			std::cout << "MateriaSource creating " << type << std::endl;
+			return _learned[i]->clone();
+		}
 	}
-	return nullptr;
+	std::cout << "MateriaSource does not know type " << type << std::endl;
+	return 0;
 }

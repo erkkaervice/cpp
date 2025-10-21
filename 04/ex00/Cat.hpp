@@ -6,24 +6,24 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:29:50 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/15 13:29:59 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/21 16:33:28 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAT_HPP
-#define CAT_HPP
+# define CAT_HPP
 
-#include "Animal.hpp"
+# include "Animal.hpp"
 
-class Cat : public Animal
+class	Cat : public Animal
 {
-public:
-	Cat();
-	Cat(const Cat &other);
-	Cat &operator=(const Cat &other);
-	~Cat();
+	public:
+		Cat(void);
+		Cat(const Cat& other);
+		Cat& operator=(const Cat& other);
+		virtual ~Cat();
 
-	void makeSound() const;
+		virtual void	makeSound(void) const;
 };
 
 #endif

@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/10/15 13:27:08 by eala-lah          #+#    #+#              #
-#    Updated: 2025/10/21 16:33:58 by eala-lah         ###   ########.fr        #
+#    Created: 2025/10/21 18:40:44 by eala-lah          #+#    #+#              #
+#    Updated: 2025/10/21 18:42:18 by eala-lah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= Polymorphism
+NAME		= InterfaceRecap
 
-SRCS		= main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
+SRCS		= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
 CXX		= c++
@@ -23,7 +23,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
-%.o: %.cpp Animal.hpp Dog.hpp Cat.hpp WrongAnimal.hpp WrongCat.hpp
+%.o: %.cpp AMateria.hpp Ice.hpp Cure.hpp ICharacter.hpp Character.hpp IMateriaSource.hpp MateriaSource.hpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:

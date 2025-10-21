@@ -6,26 +6,29 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:30:12 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/15 13:30:23 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/21 16:33:05 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WRONGANIMAL_HPP
-#define WRONGANIMAL_HPP
+# define WRONGANIMAL_HPP
 
-#include <iostream>
-#include <string>
+# include <iostream>
+# include <string>
 
-class WrongAnimal
+class	WrongAnimal
 {
-protected:
-	std::string type;
+	protected:
+		std::string	type;
 
-public:
-	WrongAnimal();
-	virtual ~WrongAnimal();
-	void makeSound() const;
-	std::string getType() const;
+	public:
+		WrongAnimal(void);
+		WrongAnimal(const WrongAnimal& other);
+		WrongAnimal& operator=(const WrongAnimal& other);
+		~WrongAnimal();
+
+		void		makeSound(void) const;
+		std::string	getType(void) const;
 };
 
 #endif

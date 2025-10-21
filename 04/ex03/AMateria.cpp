@@ -6,43 +6,50 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:39:58 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/15 13:40:09 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:42:36 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
 
-AMateria::AMateria(std::string const & t) : type(t)
+AMateria::AMateria(void) : _type("default")
 {
-	std::cout << "AMateria constructor called" << std::endl;
+	std::cout << "AMateria: Default constructor called" << std::endl;
 }
 
-AMateria::AMateria(const AMateria &other)
+AMateria::AMateria(std::string const& type) : _type(type)
 {
+	std::cout << "AMateria: Type constructor called" << std::endl;
+}
+
+AMateria::AMateria(const AMateria& other)
+{
+	std::cout << "AMateria: Copy constructor called" << std::endl;
 	*this = other;
-	std::cout << "AMateria copy constructor called" << std::endl;
 }
 
-AMateria &AMateria::operator=(const AMateria &other)
+AMateria& AMateria::operator=(const AMateria& other)
 {
+	std::cout << "AMateria: Copy assignment operator called" << std::endl;
 	if (this != &other)
-		type = other.type;
-	std::cout << "AMateria copy assignment called" << std::endl;
+	{
+		this->_type = other._type;
+	}
 	return *this;
 }
 
 AMateria::~AMateria()
 {
-	std::cout << "AMateria destructor called" << std::endl;
+	std::cout << "AMateria: Destructor called" << std::endl;
 }
 
-std::string const & AMateria::getType() const
+std::string const& AMateria::getType(void) const
 {
-	return type;
+	return _type;
 }
 
-void AMateria::use(ICharacter &target)
+void AMateria::use(ICharacter& target)
 {
-	(void)target;
+	std::cout << "AMateria: Base use function called on target " << target.getName() << std::endl;
 }
