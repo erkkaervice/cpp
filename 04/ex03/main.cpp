@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:42:04 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/21 18:44:06 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/22 13:37:48 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,23 +58,50 @@ int	main(void)
 
 	std::cout << std::endl;
 
+	std::cout << "--- TESTING FLOOR LIMIT ---" << std::endl;
+	Character*	litterBug = new Character("LitterBug");
+	for (int i = 0; i < INV_SIZE; ++i)
+	{
+		tmp = src->createMateria(((i % 2) == 0) ? "ice" : "cure");
+		litterBug->equip(tmp);
+	}
+	for (int i = 0; i < FLOOR_SIZE + 5; ++i)
+	{
+		if (i < INV_SIZE)
+			litterBug->unequip(i);
+		else
+		{
+			tmp = src->createMateria("ice");
+			litterBug->equip(tmp);
+			litterBug->unequip(0);
+		}
+	}
+	std::cout << "--- FINISHED FLOOR TEST ---" << std::endl;
+	std::cout << std::endl;
+
+
+	std::cout << "--- TESTING UNEQUIP/USE ON 'me' ---" << std::endl;
 	me->unequip(0);
 	me->use(0, *bob);
 
 	std::cout << std::endl;
 
+	std::cout << "--- TESTING COPY ---" << std::endl;
 	Character*	charles = new Character("Charles");
 	tmp = src->createMateria("ice");
 	charles->equip(tmp);
 	Character*	charles_copy = new Character(*charles);
+	charles_copy->use(0, *bob);
 
 	std::cout << std::endl;
 
+	std::cout << "--- DESTRUCTION ---" << std::endl;
 	delete bob;
 	delete me;
 	delete src;
 	delete charles;
 	delete charles_copy;
+	delete litterBug;
 
 	return 0;
 }
