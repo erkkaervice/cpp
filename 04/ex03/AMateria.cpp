@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:39:58 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/21 18:42:36 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:18:19 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,7 @@ AMateria& AMateria::operator=(const AMateria& other)
 {
 	std::cout << "AMateria: Copy assignment operator called" << std::endl;
 	if (this != &other)
-	{
 		this->_type = other._type;
-	}
 	return *this;
 }
 

@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:40:16 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/21 18:42:47 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:18:21 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,7 @@ Ice& Ice::operator=(const Ice& other)
 {
 	std::cout << "Ice: Copy assignment operator called" << std::endl;
 	if (this != &other)
-	{
 		AMateria::operator=(other);
-	}
 	return *this;
 }
 

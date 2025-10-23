@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:40:33 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/21 18:43:08 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:18:20 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,7 @@ Cure& Cure::operator=(const Cure& other)
 {
 	std::cout << "Cure: Copy assignment operator called" << std::endl;
 	if (this != &other)
-	{
 		AMateria::operator=(other);
-	}
 	return *this;
 }
 

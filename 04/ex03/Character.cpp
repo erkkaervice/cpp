@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:41:10 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/21 18:43:33 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:18:20 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,9 +107,7 @@ void	Character::unequip(int idx)
 		std::cout << _name << " unequipped " << tmp->getType() << " from slot " << idx << std::endl;
 		_inventory[idx] = 0;
 		if (_floorCount < FLOOR_SIZE)
-		{
 			_floor[_floorCount++] = tmp;
-		}
 		else
 		{
 			std::cout << "Floor is full! Leaking memory for unequipped materia!" << std::endl;
