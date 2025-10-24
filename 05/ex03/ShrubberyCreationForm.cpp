@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 15:44:13 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/23 15:44:46 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/24 15:03:29 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,17 @@ void	ShrubberyCreationForm::execute(Bureaucrat const& executor) const
 		return;
 	}
 
-	outFile << "       ###" << std::endl;
-	outFile << "      #o###" << std::endl;
-	outFile << "    #####o###" << std::endl;
-	outFile << "   #o#\\#|#/###" << std::endl;
-	outFile << "    ###\\|/#o#" << std::endl;
-	outFile << "     # }|{  #" << std::endl;
-	outFile << "       }|{" << std::endl;
+	outFile << "           &&& &&  & &&" << std::endl;
+	outFile << "       && &\\/&\\|& ()|/ @, &&" << std::endl;
+	outFile << "       &\\/(/&/&||/& /_/)_&/_&" << std::endl;
+	outFile << "    &() &\\/&|()|/&\\/ '%\" & ()" << std::endl;
+	outFile << "   &_\\_&&_\\ |& |&&/&__%_/_& &&" << std::endl;
+	outFile << "&&   && & &| &| /& & % ()& /&&" << std::endl;
+	outFile << " ()&_---()&\\&\\|&&-&&--%---()~" << std::endl;
+	outFile << "     &&     \\|||" << std::endl;
+	outFile << "             |||" << std::endl;
+	outFile << "             |||" << std::endl;
+	outFile << "             |||" << std::endl;
+	outFile << "       , -=-~  .-^- _" << std::endl;
 	outFile.close();
 }

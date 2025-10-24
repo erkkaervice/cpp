@@ -6,7 +6,7 @@
 /*   By: eala-lah <eala-lah@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 15:48:54 by eala-lah          #+#    #+#             */
-/*   Updated: 2025/10/23 15:50:15 by eala-lah         ###   ########.fr       */
+/*   Updated: 2025/10/24 15:10:50 by eala-lah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int	main(void)
 	std::cout << std::endl;
 
 	formPtr = someRandomIntern.makeForm("unknown form", "Nobody");
-	if (formPtr) // This should be NULL
+	if (formPtr)
 		delete formPtr;
 
 	return 0;
